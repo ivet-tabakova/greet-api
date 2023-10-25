@@ -1,5 +1,7 @@
 import React from "react";
 
+import AddToCart from "./AddToCart";
+
     const Card = ({
         cards
     })=>{
@@ -12,12 +14,15 @@ import React from "react";
 
                             return(
                                 <div className="card" key={`${card.id}-${index}`}>
-                                    <div className="card__credentials">
-                                    <img src={cardImage.src} alt={cardImage.name} />
-                                    <div className="card__person-info">
-                                        <p>{card.name}</p>
-                                        <p>{card.short_description}</p>
+                                    <div className="card_credentials">
+                                        <img src={cardImage.src} alt={cardImage.name} />
+                                        <div className="card_person-info">
+                                            <p>{card.name}</p>
+                                            <p>{card.short_description}</p>
+                                        </div>
                                     </div>
+                                    <div className="card_actions">
+                                        <AddToCart />
                                     </div>
                                 </div>
                             )
