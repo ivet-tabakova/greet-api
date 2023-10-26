@@ -7,6 +7,7 @@ const CategoryFilter = ({
         <select
             onChange={(e) => setSelectedCategoryFilter(e.target.value)}
             value={selectedCategoryFilter}
+            className="filter-category"
         >
             <option value="All">All</option>
             {!!categoriesFilterOptions.length &

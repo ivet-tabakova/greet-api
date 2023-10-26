@@ -25,16 +25,15 @@ import AddToCart from "./AddToCart";
 
                             return(
                                 <div className="card" key={`${card.id}-${index}`}>
+                                    <img src={cardImage.src} alt={cardImage.name} />
                                     <div className="card_credentials">
-                                        <img src={cardImage.src} alt={cardImage.name} />
                                         <div className="card_person-info">
-                                            <p>{card.name}</p>
-                                            <p>{card.short_description}</p>
+                                            <p className="person-name">{card.name}</p>
+                                            <p className="person-desc">{card.short_description}</p>
                                         </div>
-                                    </div>
-                                    <div className="card_actions">
+                                        <p>Категории:</p>
                                         {!!card.categories.length && (
-                                            <ul>
+                                            <ul className="person-category">
                                             {card.categories.map((category, index) => (
                                                 <li key={`${category.id}-${index}`}>
                                                 <a
@@ -48,6 +47,9 @@ import AddToCart from "./AddToCart";
                                             ))}
                                             </ul>
                                         )}
+                                    </div>
+                                    <div className="card_actions">
+                                        
                                         <AddToCart />
                                     </div>
                                 </div>
