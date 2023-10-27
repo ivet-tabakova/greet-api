@@ -3,12 +3,15 @@ import './App.css';
 
 import Card from './components/Card'
 import CategoryFilter from './components/CategoryFilter';
+import OrderFilter from './components/OrderFilter';
+
 
 function App() {
   const [cards, setCards] = useState([])
   const [page, setPage] = useState(1)
   const [isLoading, setIsisLoading] = useState(false)
 
+  const [selectedOrderFilter, setSelectedOrderFilter] = useState("None")
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState("All")
   const [categoriesFilterOptions, setCategoriesFilterOptions] = useState([])
 
@@ -74,6 +77,12 @@ function App() {
         selectedCategoryFilter={selectedCategoryFilter}
         setSelectedCategoryFilter={setSelectedCategoryFilter}
         categoriesFilterOptions={categoriesFilterOptions}
+      />
+
+      <OrderFilter
+        selectedOrderFilter={selectedOrderFilter}
+        setSelectedOrderFilter={setSelectedOrderFilter} 
+      
       />
 
       <Card 

@@ -4,6 +4,7 @@ import AddToCart from "./AddToCart";
 
     const Card = ({
         cards,
+        selectedOrderFilter,
         selectedCategoryFilter,
         bottomOfPageRef
     })=>{
@@ -20,6 +21,15 @@ import AddToCart from "./AddToCart";
 
                         )
 
+                        .sort((a, b) => {
+                            if (selectedOrderFilter === "Name") {
+                              return a.name.localeCompare(b.name);
+                            } else if (selectedOrderFilter === "Price") {
+                              return a.prices.price - b.prices.price;
+                            }
+                
+                            return;
+                        })
 
                         .map((card, index) => {
                             const cardImage = card.images[0];
