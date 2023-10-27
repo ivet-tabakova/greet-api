@@ -4,7 +4,8 @@ import AddToCart from "./AddToCart";
 
     const Card = ({
         cards,
-        selectedCategoryFilter
+        selectedCategoryFilter,
+        bottomOfPageRef
     })=>{
         return(
             <div className="cards">
@@ -56,6 +57,7 @@ import AddToCart from "./AddToCart";
                             )
                         })
                 ) : (<p>Loading cards ...</p>)}
+                <div ref={bottomOfPageRef}></div>
             </div>
         )
     }

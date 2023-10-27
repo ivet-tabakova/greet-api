@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.filter-category{
+.category-filter{
     margin-top: 50px;
     margin-left: 15%;
 }
@@ -54,7 +54,7 @@
 }
 
 .add-button,
-.filter-category {
+.category-filter {
     background-color: white;
     color: black;
     border: 2px solid #e7e7e7;
