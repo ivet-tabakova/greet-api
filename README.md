@@ -34,7 +34,48 @@ cd project-name
 
 React projects typically have dependencies that you need to install. To do this, use a package manager like npm (Node Package Manager) or yarn. Here's how to use npm:
 
-npm install
+
+<div class="code-container">
+    <pre>
+        <code id="copyable-code">
+            npm install
+        </code>
+    </pre>
+    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
+</div>
+
+<style>
+    .code-container {
+        position: relative;
+        background: #f4f4f4;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .copy-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #0074d9;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function copyToClipboard(elementId) {
+        const copyText = document.getElementById(elementId);
+        const textArea = document.createElement('textarea');
+        textArea.value = copyText.textContent;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        alert('Code copied to clipboard');
+    }
+</script>
 
 Or if you prefer using yarn:
 
