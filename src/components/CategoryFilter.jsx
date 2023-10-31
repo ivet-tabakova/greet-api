@@ -20,4 +20,4 @@ const CategoryFilter = ({
     );
   };
   
-  export default CategoryFilter;
+export default CategoryFilter;

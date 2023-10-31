@@ -17,6 +17,7 @@ function App() {
 
   const bottomOfPageRef = useRef(null)
 
+  // Fetching(consuming) the data from the url
   useEffect(() => {
     const fetchData = async () => {
       setIsisLoading(true);
@@ -69,8 +70,6 @@ function App() {
   }, [cards]);
 
 
-
-
   return (
     <div className="wrapper">
       <CategoryFilter 
@@ -84,14 +83,16 @@ function App() {
         setSelectedOrder={setSelectedOrder}
       />
 
-
       <Cards
         cards={cards}
         selectedCategoryFilter={selectedCategoryFilter}
         selectedOrder={selectedOrder}
         bottomOfPageRef={bottomOfPageRef}
       />
-      {!!cards.length && isLoading && <p>Loading more cards...</p>}
+
+      {
+        !!cards.length && isLoading && <p>Loading more cards...</p>
+      }
     </div>
   );
 }
