@@ -24,31 +24,32 @@ You can filter the results in several ways - by category, by name and by price.
 
 Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, use the git clone command to clone the GitHub repository. 
 
-git clone https://github.com/ivet-tabakova/greet-api
+    git clone https://github.com/ivet-tabakova/greet-api
 
 2. Install Dependencies:
 
 Once you have cloned the repository, navigate into the project directory:
 
-cd project-name
+    cd project-name
 
 React projects typically have dependencies that you need to install. To do this, use a package manager like npm (Node Package Manager) or yarn. Here's how to use npm:
 
-npm install
+    npm install
 
 Or if you prefer using yarn:
 
-yarn install
+    yarn install
+
 This will install all the required libraries and packages specified in the package.json file.
 
 ## Usage
 Start the Development Server:
 
-npm start
+    npm start
 
 Or, if you're using yarn:
 
-yarn start
+    yarn start
 
 The development server will compile and serve the project, making it available at 'http://localhost:3000' by default. You can access your React app in your web browser.
 
@@ -63,4 +64,5 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## Contact
 Ivet Tabakova - https://www.linkedin.com/in/ivet-tabakova/
+
 Project Link: https://github.com/ivet-tabakova/greet-api
