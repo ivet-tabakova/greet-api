@@ -12,12 +12,14 @@
 This app allows the user to connect with favorite artists, creators and influencers by using an API to pull data and display the results.
 Every object is presented as a card with details (image, name, description and category).
 You can filter the results in several ways - by category, by name and by price. 
-'Add To Cart' button sends the user to another page where he can fill in his details and receive a greeting from the celebrity he has chosen.
+'Add To Cart' button sends the user to another page where he can fill in his details and receive a greeting from the celebrity he has chosen. Every requirement is implemented and the design is improvised and simple.
 
 ## Features
 - Pulls data from API and renders the results
 - Filter the results
-- Link to another page, where you can receive a greeting from the celebrity
+- Sort the results
+- Infinite Scroll
+- Loading state
 
 ## Installation
 1. Clone the Repository:
@@ -30,7 +32,7 @@ Open your terminal or command prompt and navigate to the directory where you wan
 
 Once you have cloned the repository, navigate into the project directory:
 
-    cd project-name
+    cd greet-api
 
 React projects typically have dependencies that you need to install. To do this, use a package manager like npm (Node Package Manager) or yarn. Here's how to use npm:
 

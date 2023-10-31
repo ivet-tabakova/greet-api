@@ -91,7 +91,7 @@ function App() {
       />
 
       {
-        !!cards.length && isLoading && <p>Loading more cards...</p>
+        !!cards.length && isLoading && <p className="bottom-text">Loading more cards...</p>
       }
     </div>
   );
