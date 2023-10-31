@@ -79,7 +79,14 @@ React projects typically have dependencies that you need to install. To do this,
 
 Or if you prefer using yarn:
 
-yarn install
+<div class="code-container">
+    <pre>
+        <code id="copyable-code">
+            yarn install
+        </code>
+    </pre>
+    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
+</div>
 This will install all the required libraries and packages specified in the package.json file.
 
 ## Usage
