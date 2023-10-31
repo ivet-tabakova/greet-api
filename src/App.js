@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import './App.css';
 
-import Card from './components/Card'
+import Cards from './components/Cards'
 import CategoryFilter from './components/CategoryFilter';
 import OrderFilter from './components/OrderFilter';
 
@@ -11,7 +11,7 @@ function App() {
   const [page, setPage] = useState(1)
   const [isLoading, setIsisLoading] = useState(false)
 
-  const [selectedOrderFilter, setSelectedOrderFilter] = useState("None")
+  const [selectedOrder, setSelectedOrder] = useState("None");
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState("All")
   const [categoriesFilterOptions, setCategoriesFilterOptions] = useState([])
 
@@ -80,16 +80,18 @@ function App() {
       />
 
       <OrderFilter
-        selectedOrderFilter={selectedOrderFilter}
-        setSelectedOrderFilter={setSelectedOrderFilter} 
-      
+        selectedOrder={selectedOrder}
+        setSelectedOrder={setSelectedOrder}
       />
 
-      <Card 
+
+      <Cards
         cards={cards}
         selectedCategoryFilter={selectedCategoryFilter}
+        selectedOrder={selectedOrder}
         bottomOfPageRef={bottomOfPageRef}
       />
+      {!!cards.length && isLoading && <p>Loading more cards...</p>}
     </div>
   );
 }
