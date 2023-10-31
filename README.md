@@ -24,75 +24,31 @@ You can filter the results in several ways - by category, by name and by price.
 
 Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, use the git clone command to clone the GitHub repository. 
 
-<div class="code-container">
-    <pre>
-        <code id="copyable-code">
-            git clone https://github.com/ivet-tabakova/greet-api
-        </code>
-    </pre>
-    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
-</div>
+git clone https://github.com/ivet-tabakova/greet-api
 
 2. Install Dependencies:
 
 Once you have cloned the repository, navigate into the project directory:
 
-<div class="code-container">
-    <pre>
-        <code id="copyable-code">
-            cd project-name
-        </code>
-    </pre>
-    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
-</div>
+cd project-name
 
 React projects typically have dependencies that you need to install. To do this, use a package manager like npm (Node Package Manager) or yarn. Here's how to use npm:
 
-
-<div class="code-container">
-    <pre>
-        <code id="copyable-code">
-            npm install
-        </code>
-    </pre>
-    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
-</div>
+npm install
 
 Or if you prefer using yarn:
 
-<div class="code-container">
-    <pre>
-        <code id="copyable-code">
-            yarn install
-        </code>
-    </pre>
-    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
-</div>
-
+yarn install
 This will install all the required libraries and packages specified in the package.json file.
 
 ## Usage
 Start the Development Server:
 
-<div class="code-container">
-    <pre>
-        <code id="copyable-code">
-            npm start
-        </code>
-    </pre>
-    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
-</div>
+npm start
 
 Or, if you're using yarn:
 
-<div class="code-container">
-    <pre>
-        <code id="copyable-code">
-           yarn start
-        </code>
-    </pre>
-    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
-</div>
+yarn start
 
 The development server will compile and serve the project, making it available at 'http://localhost:3000' by default. You can access your React app in your web browser.
 
@@ -107,19 +63,4 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## Contact
 Ivet Tabakova - https://www.linkedin.com/in/ivet-tabakova/
-
 Project Link: https://github.com/ivet-tabakova/greet-api
-
-
-<script>
-    function copyToClipboard(elementId) {
-        const copyText = document.getElementById(elementId);
-        const textArea = document.createElement('textarea');
-        textArea.value = copyText.textContent;
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
-        alert('Code copied to clipboard');
-    }
-</script>
