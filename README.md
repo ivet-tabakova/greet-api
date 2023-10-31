@@ -111,26 +111,6 @@ Ivet Tabakova - https://www.linkedin.com/in/ivet-tabakova/
 Project Link: https://github.com/ivet-tabakova/greet-api
 
 
-<style>
-    .code-container {
-        position: relative;
-        background: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ccc;
-    }
-
-    .copy-button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: #0074d9;
-        color: #fff;
-        border: none;
-        padding: 5px 10px;
-        cursor: pointer;
-    }
-</style>
-
 <script>
     function copyToClipboard(elementId) {
         const copyText = document.getElementById(elementId);
