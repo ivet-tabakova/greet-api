@@ -24,13 +24,27 @@ You can filter the results in several ways - by category, by name and by price.
 
 Open your terminal or command prompt and navigate to the directory where you want to store the project. Then, use the git clone command to clone the GitHub repository. 
 
-git clone https://github.com/ivet-tabakova/greet-api
+<div class="code-container">
+    <pre>
+        <code id="copyable-code">
+            git clone https://github.com/ivet-tabakova/greet-api
+        </code>
+    </pre>
+    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
+</div>
 
 2. Install Dependencies:
 
 Once you have cloned the repository, navigate into the project directory:
 
-cd project-name
+<div class="code-container">
+    <pre>
+        <code id="copyable-code">
+            cd project-name
+        </code>
+    </pre>
+    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
+</div>
 
 React projects typically have dependencies that you need to install. To do this, use a package manager like npm (Node Package Manager) or yarn. Here's how to use npm:
 
@@ -43,6 +57,59 @@ React projects typically have dependencies that you need to install. To do this,
     </pre>
     <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
 </div>
+
+Or if you prefer using yarn:
+
+<div class="code-container">
+    <pre>
+        <code id="copyable-code">
+            yarn install
+        </code>
+    </pre>
+    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
+</div>
+
+This will install all the required libraries and packages specified in the package.json file.
+
+## Usage
+Start the Development Server:
+
+<div class="code-container">
+    <pre>
+        <code id="copyable-code">
+            npm start
+        </code>
+    </pre>
+    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
+</div>
+
+Or, if you're using yarn:
+
+<div class="code-container">
+    <pre>
+        <code id="copyable-code">
+           yarn start
+        </code>
+    </pre>
+    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
+</div>
+
+The development server will compile and serve the project, making it available at 'http://localhost:3000' by default. You can access your React app in your web browser.
+
+## Contributing
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". 
+
+1. Fork the Project
+2. Create a new branch for your feature or bug fix. (git checkout -b feature/AmazingFeature)
+3. Make your changes and commit them. (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
+
+## Contact
+Ivet Tabakova - https://www.linkedin.com/in/ivet-tabakova/
+
+Project Link: https://github.com/ivet-tabakova/greet-api
+
 
 <style>
     .code-container {
@@ -76,39 +143,3 @@ React projects typically have dependencies that you need to install. To do this,
         alert('Code copied to clipboard');
     }
 </script>
-
-Or if you prefer using yarn:
-
-<div class="code-container">
-    <pre>
-        <code id="copyable-code">
-            yarn install
-        </code>
-    </pre>
-    <button class="copy-button" onclick="copyToClipboard('copyable-code')">Copy</button>
-</div>
-This will install all the required libraries and packages specified in the package.json file.
-
-## Usage
-Start the Development Server:
-
-npm start
-
-Or, if you're using yarn:
-
-yarn start
-
-The development server will compile and serve the project, making it available at 'http://localhost:3000' by default. You can access your React app in your web browser.
-
-## Contributing
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". 
-
-1. Fork the Project
-2. Create a new branch for your feature or bug fix. (git checkout -b feature/AmazingFeature)
-3. Make your changes and commit them. (git commit -m 'Add some AmazingFeature')
-4. Push to the Branch (git push origin feature/AmazingFeature)
-5. Open a Pull Request
-
-## Contact
-Ivet Tabakova - https://www.linkedin.com/in/ivet-tabakova/
-Project Link: https://github.com/ivet-tabakova/greet-api
