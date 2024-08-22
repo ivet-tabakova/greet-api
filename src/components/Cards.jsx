@@ -28,7 +28,7 @@ const Card = ({
                             return a.prices.price - b.prices.price;
                         }
 
-                        return;
+                        return 0;
                     })
 
                     .map((card, index) => {

@@ -67,7 +67,7 @@ function App() {
       const uniqueCategoriesArray = [...uniqueCategoriesSet];
       setCategoriesFilterOptions(uniqueCategoriesArray);
     }
-  }, [cards]);
+  }, [cards, categoriesFilterOptions]);
 
 
   return (
