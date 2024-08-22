@@ -5,9 +5,9 @@ const OrderFilter = ({ selectedOrder, setSelectedOrder }) => {
         value={selectedOrder}
         className="sort-filter"
       >
-        <option value="None">None</option>
-        <option value="Name">Name</option>
-        <option value="Price">Price</option>
+        <option value="None">Без филтър</option>
+        <option value="Name">По азбучен ред</option>
+        <option value="Price">По най-ниска цена</option>
       </select>
     );
   };
