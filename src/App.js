@@ -22,7 +22,7 @@ function App() {
     const fetchData = async () => {
       setIsisLoading(true);
       const response = await fetch(
-        `https://cors-anywhere.herokuapp.com/https://greet.bg/wp-json/wc/store/products?page=${page}`
+        `/wp-json/wc/store/products?page=${page}`
       );
       const data = await response.json();
       setCards((prevCards) => [...prevCards, ...data]);
